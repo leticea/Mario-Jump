@@ -24,7 +24,7 @@ const loop = setInterval(() => {
     // [pegando o valor da propriedade do deslocamento esquerdo da nuvem]
     const cloudsPosition = clouds.offsetLeft;
 
-    // [condição pro mario encostar no cano e acabar o jogo]
+    // [condição pro mario encostar no cano e acabar o jogo/parar a animação]
     if (pipePosition <= 80 && pipePosition > 0 && marioPosition < 54) {
 
         pipe.style.animation = 'none';
