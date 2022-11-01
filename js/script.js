@@ -17,9 +17,11 @@ const loop = setInterval(() => {
 
     // [pegando o valor da propriedade do deslocamento esquerdo do cano]
     const pipePosition =  pipe.offsetLeft;
+
     // [pegando o valor da propriedade bottom]
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
 
+    // [pegando o valor da propriedade do deslocamento esquerdo da nuvem]
     const cloudsPosition = clouds.offsetLeft;
 
     // [condição pro mario encostar no cano e acabar o jogo]
