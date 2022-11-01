@@ -1,4 +1,5 @@
 const mario = document.querySelector('.mario');
+const pipe = document.querySelector('.pipe');
 
 const jump = () => {
 
@@ -9,5 +10,16 @@ const jump = () => {
         mario.classList.remove('jump');
     }, 500);
 }
+
+const loop = setInterval(() => {
+
+    const pipePosition =  pipe.offsetLeft;
+
+    if (pipePosition <= 80) {
+
+        pipe.style.animation = 'none';
+    }
+
+}, 10);
 
 document.addEventListener('keydown', jump);
