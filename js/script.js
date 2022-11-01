@@ -20,10 +20,15 @@ const loop = setInterval(() => {
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
 
     // [condição pro mario encostar no cano e acabar o jogo]
-    if (pipePosition <= 80 && pipePosition > 0 && marioPosition < 52) {
+    if (pipePosition <= 80 && pipePosition > 0 && marioPosition < 54) {
 
         pipe.style.animation = 'none';
         pipe.style.left = `${pipePosition}px`;
+
+        mario.style.animation = 'none';
+        mario.style.bottom = `${marioPosition}px`;
+
+        mario.src = './images/game-over.png';
     }
 
 }, 10);
