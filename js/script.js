@@ -5,6 +5,7 @@ const jump = () => {
 
     mario.classList.add('jump');
 
+    // [remove a classe do jump para que o pulo possa ser efetuado novamente ao clicar no botão]
     setTimeout(() => {
 
         mario.classList.remove('jump');
@@ -13,10 +14,12 @@ const jump = () => {
 
 const loop = setInterval(() => {
 
+    // [pegando o valor da propriedade do deslocamento esquerdo do cano]
     const pipePosition =  pipe.offsetLeft;
+    // [pegando o valor da propriedade bottom]
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
 
-
+    // [condição pro mario encostar no cano e acabar o jogo]
     if (pipePosition <= 80 && pipePosition > 0 && marioPosition < 52) {
 
         pipe.style.animation = 'none';
