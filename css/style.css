@@ -16,13 +16,13 @@
 .pipe {
     position: absolute;
     bottom: 0;
-    width: 50px;
+    width: 40px;
     animation: pipe-animation 2s /*infinite linear;*/
 }
 
 @keyframes pipe-animation {
     from {
-        right: 0;
+        right: -40px;
     }
 
     to {
