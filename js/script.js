@@ -1,5 +1,6 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
+const clouds = document.querySelector('.clouds');
 
 const jump = () => {
 
@@ -19,6 +20,8 @@ const loop = setInterval(() => {
     // [pegando o valor da propriedade bottom]
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
 
+    const cloudsPosition = clouds.offsetLeft;
+
     // [condição pro mario encostar no cano e acabar o jogo]
     if (pipePosition <= 80 && pipePosition > 0 && marioPosition < 54) {
 
@@ -31,6 +34,9 @@ const loop = setInterval(() => {
         mario.src = './images/game-over.png';
         mario.style.width = '50px';
         mario.style.marginLeft = '30px';
+
+        clouds.style.animation = 'none';
+        clouds.style.left = `${cloudsPosition}px`;
 
         clearInterval(loop);
     }
