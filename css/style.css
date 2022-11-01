@@ -8,4 +8,15 @@
     width: 80%;
     height: 500px;
     border: 1px solid #333;
+    margin: 0 auto;
+    position: relative;
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    right: 50px;
+
+
 }
