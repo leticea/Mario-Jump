@@ -29,6 +29,10 @@ const loop = setInterval(() => {
         mario.style.bottom = `${marioPosition}px`;
 
         mario.src = './images/game-over.png';
+        mario.style.width = '50px';
+        mario.style.marginLeft = '35px';
+
+        clearInterval(loop);
     }
 
 }, 10);
