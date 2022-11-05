@@ -30,7 +30,7 @@ Aula do canal [Manual do Dev](https://www.youtube.com/watch?v=r9buAwVBDhA&t=28s)
 ## 🚀 Como Rodar
 
 - Clone o projeto.
-- Entre no repositório e clice duas vezes no arquivo index.html
+- Entre no repositório e click duas vezes no arquivo index.html
 
 ## 🤔 Como contribuir
 
